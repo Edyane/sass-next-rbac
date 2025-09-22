@@ -21,6 +21,8 @@ export const createAppAbility = createMongoAbility as CreateAbility<AppAbility>
 
 const { build, can, cannot } = new AbilityBuilder(createAppAbility)
 
+// o padrão é "cannot";
+// o usuário pode convidar outro usuário;
 can('invite', 'User')
 cannot('delete', 'User')
 
